@@ -11,7 +11,7 @@ const MenuCard = ({ menu }) => {
             <div className="content">
                 <div>
                     <div className="title">
-                        <h4 className="text-2xl">Little Lemon</h4>
+                        <h4 className="text-2xl">{name}</h4>
                         <h4 className="text-2xl text-secondary">{price}</h4>
                     </div>
                     <p>{description}</p>

@@ -1,0 +1,16 @@
+.star-rating {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--color-neutral);
+}
+
+.star-rating .star-filled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--fill, 100%);
+    overflow: hidden;
+    color: var(--color-secondary);
+    white-space: nowrap;
+}

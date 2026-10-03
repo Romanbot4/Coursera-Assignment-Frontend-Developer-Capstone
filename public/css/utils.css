@@ -642,6 +642,18 @@
     color: var(--color-primary);
 }
 
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-neutral {
+    color: var(--color-neutral);
+}
+
+.text-neutral-hard {
+    color: var(--color-neutral-hard);
+}
+
 .text-primary-50 {
     color: var(--color-primary-50);
 }

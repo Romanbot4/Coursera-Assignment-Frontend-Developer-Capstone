@@ -1,0 +1,14 @@
+.testimonials {
+    margin-top: calc(3rem + 2rem);
+}
+
+.testimonials-heading {
+    margin-bottom: 2rem;
+}
+
+
+.testimonials .testimonial-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+}

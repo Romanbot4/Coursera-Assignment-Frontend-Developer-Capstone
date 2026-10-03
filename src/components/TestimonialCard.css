@@ -1,0 +1,41 @@
+.testimonial-card {
+    border: 1px solid var(--color-neutral);
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-profile {
+    display: flex;
+    gap: 1rem;
+}
+
+.user-profile .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.user-profile>.content>p {
+    color: var(--color-neutral-hard);
+}
+
+.user-profile img {
+    width: 5rem;
+    aspect-ratio: 1.0;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.blockquote-symbol {
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.rating-stars {
+    display: flex;
+    gap: 0.25rem;
+}
