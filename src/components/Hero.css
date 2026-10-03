@@ -1,0 +1,23 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--color-on-primary);
+    align-items: center;
+}
+
+.hero .detail {
+    max-width: 26rem;
+}
+
+.hero img {
+    height: 26rem;
+    aspect-ratio: 1.0;
+    object-fit: cover;
+    transform: translateY(4rem);
+    justify-self: end;
+    border-radius: 1rem;
+}
+
+.hero button {
+    margin-top: 1rem;
+}

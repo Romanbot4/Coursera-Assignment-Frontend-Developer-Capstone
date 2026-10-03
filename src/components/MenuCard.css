@@ -1,0 +1,46 @@
+.menu-card {
+    border-radius: 1rem;
+    background-color: var(--color-neutral);
+}
+
+.menu-card .content {
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-card .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.menu-card>img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.menu-card>div {
+    padding: 1rem;
+}
+
+button.order-button {
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-black);
+    display: flex;
+    gap: 0.5rem;
+    text-overflow: ellipsis;
+    max-lines: 1;
+    padding: 0;
+}
+
+button.order-button>img {
+    height: 2rem;
+    aspect-ratio: 1.0;
+    object-fit: contain;
+}

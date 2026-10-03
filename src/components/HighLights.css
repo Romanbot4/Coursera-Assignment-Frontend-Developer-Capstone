@@ -1,0 +1,16 @@
+.highlights {
+    margin-top: calc(3rem + 2rem);
+}
+
+.highlights-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+
+.highlights .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
