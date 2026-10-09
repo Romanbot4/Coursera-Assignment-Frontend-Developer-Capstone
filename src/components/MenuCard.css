@@ -11,6 +11,10 @@
     justify-content: space-between;
 }
 
+.menu-card .price {
+    font-family: "Markazi Text", serif;
+}
+
 .menu-card .title {
     display: flex;
     justify-content: space-between;

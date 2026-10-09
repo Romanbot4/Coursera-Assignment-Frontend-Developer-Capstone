@@ -2,11 +2,11 @@ import './Star.css'
 
 const Star = ({ percentage }) => {
     return (
-        <div class="star-rating" style={{
+        <div className="star-rating" aria-hidden="true" style={{
             "--fill": `${percentage * 100}%`
         }}>
-            <span class="star-empty">★</span>
-            <span class="star-filled">★</span>
+            <span className="star-empty">★</span>
+            <span className="star-filled">★</span>
         </div>
     );
 }

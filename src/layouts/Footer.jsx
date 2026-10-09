@@ -25,14 +25,14 @@ const Footer = ({ navLinks }) => {
             <div className="container footer-content">
                 <img className="footer-logo" src={Logo} alt="Little Lemon" />
 
-                <nav className="footer-column">
-                    <h4 className="text-3xl text-secondary">Sitemap</h4>
+                <nav className="footer-column" aria-label="Footer navigation">
+                    <h3 className="text-3xl text-secondary">Sitemap</h3>
                     <ul>
                         {
                             navLinks.map((navLink, index) => {
                                 return (
                                     <li key={index}>
-                                        <Link to={navLink.path} aria-label={navLink.name}>
+                                        <Link to={navLink.path}>
                                             {navLink.name}
                                         </Link>
                                     </li>
@@ -43,7 +43,7 @@ const Footer = ({ navLinks }) => {
                 </nav>
 
                 <div className="footer-column">
-                    <h4 className="text-3xl text-secondary">Contact</h4>
+                    <h3 className="text-3xl text-secondary">Contact</h3>
                     <address>
                         <ul>
                             {
@@ -56,14 +56,14 @@ const Footer = ({ navLinks }) => {
                 </div>
 
                 <div >
-                    <h4 className="text-3xl text-secondary">Socials</h4>
+                    <h3 className="text-3xl text-secondary">Socials</h3>
                     <ul className='social-icons'>
                         {
                             socials.map((social, index) => {
                                 return (
                                     <li key={index}>
-                                        <a href={social.url} target="_blank" rel="noreferrer">
-                                            <img src={social.icon} alt={social.name} srcset="" />
+                                        <a href={social.url} target="_blank" rel="noreferrer" aria-label={`${social.name} (opens in a new tab)`}>
+                                            <img src={social.icon} alt={social.name} />
                                         </a>
                                     </li>
                                 );

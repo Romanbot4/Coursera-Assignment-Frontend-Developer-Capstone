@@ -11,14 +11,14 @@ const MenuCard = ({ menu }) => {
             <div className="content">
                 <div>
                     <div className="title">
-                        <h4 className="text-2xl">{name}</h4>
-                        <h4 className="text-2xl text-secondary">{price}</h4>
+                        <h3 className="text-2xl">{name}</h3>
+                        <p className="price text-2xl text-secondary">{price}</p>
                     </div>
                     <p>{description}</p>
                 </div>
-                <button className="order-button text-base">
+                <button className="order-button text-base" aria-label={`Order ${name} for delivery`}>
                     Order a delivery
-                    <img src={DeliveryIcon} alt={name} />
+                    <img src={DeliveryIcon} alt="" />
                 </button>
             </div>
         </article>

@@ -14,7 +14,7 @@ const ConfirmedBooking = () => {
     return (
         <section className="container confirmed-booking">
             <span className="confirmed-icon" aria-hidden="true">✓</span>
-            <h2 className="text-5xl">Your table has been reserved!</h2>
+            <h1 className="text-5xl">Your table has been reserved!</h1>
             <p className="text-xl">You'll receive a confirmation email with all the details.</p>
 
             {

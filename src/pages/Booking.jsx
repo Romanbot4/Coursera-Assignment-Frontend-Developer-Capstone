@@ -27,7 +27,7 @@ const Booking = () => {
         <>
             <div className="bg-primary">
                 <section className="container booking-heading">
-                    <h2 className="text-5xl text-secondary">Reserve a Table</h2>
+                    <h1 className="text-5xl text-secondary">Reserve a Table</h1>
                     <p className="text-xl font-medium">Book your table at Little Lemon, Chicago. We look forward to serving you.</p>
                 </section>
             </div>

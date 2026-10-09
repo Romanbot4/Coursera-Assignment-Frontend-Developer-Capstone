@@ -10,7 +10,7 @@ const Header = ({ navLinks }) => {
 
     return (
         <header>
-            <nav className="container header">
+            <nav className="container header" aria-label="Main navigation">
                 <Link to="/">
                     <img className="header-logo" src={Logo} alt="Little Lemon" />
                 </Link>
@@ -22,7 +22,7 @@ const Header = ({ navLinks }) => {
                     aria-expanded={navOpen}
                     aria-controls='nav-list'
                 >
-                    <img src={navOpen ? CloseIcon : HumburgerIcon} alt="Navigation Icon" />
+                    <img src={navOpen ? CloseIcon : HumburgerIcon} alt="" />
                 </button>
 
                 <ul className="nav-list text-lg font-medium" id="nav-list" data-state={navOpen ? "open" : ""}>
