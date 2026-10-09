@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import MenuCard from './MenuCard';
 
 import './HighLights.css';
@@ -36,10 +37,10 @@ const menuItems = [
 
 const HighLights = () => {
     return (
-        <section className="container highlights">
+        <section className="container highlights" id="menu">
             <div className="highlights-heading">
                 <h2 className="text-5xl">This Week Specials!</h2>
-                <button>Online Menu</button>
+                <Link to="/order" className="button">Online Menu</Link>
             </div>
 
             <div className="menu-items">

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Hero.css';
 import HeroImage from '../assets/images/restauranfood.jpg'
 
@@ -12,7 +13,7 @@ const Hero = () => {
                         Mediterranean restaurant, focused on traditional
                         recipes served with a modern twist.</p>
 
-                    <button>Reserve a Table</button>
+                    <Link to="/booking" className="button">Reserve a Table</Link>
                 </div>
 
                 <img src={HeroImage} alt="Restaurant Food" />

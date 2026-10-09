@@ -1,9 +1,10 @@
 .highlights {
-    margin-top: calc(3rem + 2rem);
+    margin-top: calc(3rem + 3rem);
 }
 
 .highlights-heading {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
 }

@@ -1,0 +1,36 @@
+.confirmed-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.confirmed-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    aspect-ratio: 1.0;
+    border-radius: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.booking-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 36rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--color-neutral);
+}
+
+.booking-summary dt {
+    color: var(--color-primary);
+}

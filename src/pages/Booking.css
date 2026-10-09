@@ -1,0 +1,13 @@
+.booking-heading {
+    color: var(--color-on-primary);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.booking-heading p {
+    max-width: 32rem;
+}
+
+.booking {
+    margin-top: 2rem;
+}

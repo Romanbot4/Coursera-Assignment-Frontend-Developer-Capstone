@@ -1,8 +1,13 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logos/logo_wordmark.svg';
+import Logo from '../assets/logos/logo.png';
+import HumburgerIcon from '../assets/icons/icon_hamburger_menu.svg';
+import CloseIcon from '../assets/icons/icon_close.svg';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ navLinks }) => {
+    const [navOpen, setNavOpen] = useState(false);
+
     return (
         <header>
             <nav className="container header">
@@ -10,25 +15,26 @@ const Header = () => {
                     <img className="header-logo" src={Logo} alt="Little Lemon" />
                 </Link>
 
-                <ul className="nav-list text-lg font-medium">
-                    <li>
-                        <Link to="#">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="#">About</Link>
-                    </li>
-                    <li>
-                        <Link to="#">Menu</Link>
-                    </li>
-                    <li>
-                        <Link to="#">Reservations</Link>
-                    </li>
-                    <li>
-                        <Link to="#">Order Online</Link>
-                    </li>
-                    <li>
-                        <Link to="#">Login</Link>
-                    </li>
+                <button
+                    onClick={() => setNavOpen(!navOpen)}
+                    className='mobile-nav'
+                    aria-label='toggle navigation menu'
+                    aria-expanded={navOpen}
+                    aria-controls='nav-list'
+                >
+                    <img src={navOpen ? CloseIcon : HumburgerIcon} alt="Navigation Icon" />
+                </button>
+
+                <ul className="nav-list text-lg font-medium" id="nav-list" data-state={navOpen ? "open" : ""}>
+                    {
+                        navLinks.map((navLink, index) => {
+                            return (
+                                <li key={index}>
+                                    <Link to={navLink.path} onClick={() => setNavOpen(false)}>{navLink.name}</Link>
+                                </li>
+                            );
+                        })
+                    }
                 </ul>
             </nav>
         </header>

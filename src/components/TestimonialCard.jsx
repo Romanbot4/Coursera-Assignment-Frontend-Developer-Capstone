@@ -14,8 +14,8 @@ const TestimonialCard = ({ testimonial }) => {
                     <p className="text-small text-neutral">{description}</p>
                 </div>
             </section>
+
             <blockquote>
-                <img src={QuoteIcon} alt="quote symbol" className='blockquote-symbol' />
                 {says}
             </blockquote>
 
@@ -26,6 +26,8 @@ const TestimonialCard = ({ testimonial }) => {
                     })
                 }
             </div>
+
+            <img src={QuoteIcon} alt="quote symbol" className='blockquote-symbol' />
         </article>
     );
 }

@@ -1,0 +1,46 @@
+.about-us {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.abous-us-image-wrapper {
+    height: 38rem;
+    position: relative;
+}
+
+.abous-us-image-wrapper img {
+    margin: 2rem;
+    position: absolute;
+    height: 20rem;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 2rem;
+}
+
+
+@media (min-width: 768px) {
+    .about-us {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.abous-us-image-wrapper> :first-child {
+    top: 0;
+    left: 0;
+    transform: rotate(-11.25deg);
+}
+
+.abous-us-image-wrapper> :last-child {
+    bottom: 0;
+    right: 0;
+    transform: rotate(11.25deg);
+}

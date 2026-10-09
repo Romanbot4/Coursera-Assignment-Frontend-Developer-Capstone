@@ -1,8 +1,26 @@
 .hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     color: var(--color-on-primary);
     align-items: center;
+    gap: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hero img {
+        width: 100%;
+        justify-self: center;
+    }
 }
 
 .hero .detail {
@@ -18,6 +36,6 @@
     border-radius: 1rem;
 }
 
-.hero button {
+.hero .button {
     margin-top: 1rem;
 }
